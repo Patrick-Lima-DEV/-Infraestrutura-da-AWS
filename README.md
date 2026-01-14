@@ -6,7 +6,7 @@ Este repositório contém o relatório de implementação de serviços AWS para 
 
 ## Objetivo
 
-Elencar e implementar 3 serviços AWS que contribuam para a diminuição de custos operacionais em uma empresa fictícia chamada Abstergo Industries, especializada em soluções de farmácia online.
+Elencar e implementar 3 serviços AWS que contribuam para a diminuição de custos operacionais em uma empresa fictícia chamada SynapseDev, especializada em soluções de farmácia online.
 
 ## Serviços AWS Implementados
 
@@ -18,9 +18,37 @@ Elencar e implementar 3 serviços AWS que contribuam para a diminuição de cust
 - **Foco**: Computação serverless.
 - **Caso de Uso**: Implementação de funções serverless para processar pedidos e notificações. Paga-se apenas pelo tempo de execução, diminuindo custos operacionais comparado a servidores dedicados, ideal para workloads variáveis.
 
-### Etapa 3: Amazon RDS
-- **Foco**: Banco de dados relacional gerenciado.
-- **Caso de Uso**: Hospedagem do banco de dados da farmácia com instâncias reservadas para economia a longo prazo. Garante alta disponibilidade, backups automáticos e escalabilidade sem gerenciar infraestrutura física.
+## Arquitetura da Plataforma
+
+Abaixo, um diagrama simplificado da arquitetura proposta para a plataforma virtual de farmácia, utilizando os serviços AWS selecionados:
+
+```mermaid
+graph TD
+    A[Usuário] --> B[API Gateway]
+    B --> C[AWS Lambda]
+    C --> D[Amazon RDS - Banco de Dados]
+    C --> E[Amazon S3 - Armazenamento de Arquivos]
+    
+    subgraph "Serviços AWS"
+        D
+        E
+    end
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#bfb,stroke:#333,stroke-width:2px
+    style D fill:#fbb,stroke:#333,stroke-width:2px
+    style E fill:#fbf,stroke:#333,stroke-width:2px
+```
+
+### Descrição do Diagrama
+- **Usuário**: Representa o cliente acessando a plataforma.
+- **API Gateway**: Ponto de entrada para as APIs, roteando requisições.
+- **AWS Lambda**: Processa lógica de negócio de forma serverless.
+- **Amazon RDS**: Armazena dados relacionais da farmácia.
+- **Amazon S3**: Armazena arquivos estáticos como imagens de medicamentos.
+
+Este diagrama ilustra como os serviços se integram para reduzir custos, com foco em escalabilidade e eficiência.
 
 ## Benefícios Esperados
 
@@ -55,5 +83,5 @@ Este projeto é para fins educacionais e não possui licença específica.
 ---
 
 **Data do Projeto**: 14 de janeiro de 2026  
-**Empresa**: Abstergo Industries  
-**Responsável**: [Seu Nome Aqui]
+**Empresa**: SynapseDev 
+**Responsável**: [Patrick Dos Santos Lima]

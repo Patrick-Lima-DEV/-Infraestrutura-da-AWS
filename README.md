@@ -34,11 +34,11 @@ graph TD
         E
     end
     
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style C fill:#bfb,stroke:#333,stroke-width:2px
-    style D fill:#fbb,stroke:#333,stroke-width:2px
-    style E fill:#fbf,stroke:#333,stroke-width:2px
+    style A fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style B fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style C fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style D fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style E fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
 ```
 
 ### Descrição do Diagrama
